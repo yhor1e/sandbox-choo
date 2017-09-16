@@ -7,9 +7,20 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "budo index.js:bundle.js -p 3000 --no-debug -- -b bundle-collapser/plugin -g unassertify -g yo-yoify -g uglifyify"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "budo": "^10.0.4",
+    "bundle-collapser": "^1.3.0",
+    "choo": "^6.0.1",
+    "uglifyify": "^4.0.3",
+    "unassertify": "^2.0.4",
+    "yo-yoify": "^3.7.3"
+  }
 }
